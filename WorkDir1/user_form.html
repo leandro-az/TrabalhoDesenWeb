@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<head><title>Formulario Usuario</title></head>
+<head>
+    <title>Formulario Usuario</title>
+    <meta charset="UTF-8"></head>
 <body>
     <div class="topDiv">
         <p class="title">Formulario Usuario</p>
@@ -7,16 +9,19 @@
     <div class="contentDiv">
     <form class="form">
         <label class="formLbl">Nome Completo</label>
-        <input class="formTxt" type="text">
+        <input class="formInpt" type="text">
         <br>
         <label class="formLbl">E-mail</label>
-        <input class="formTxt" type="text">
+        <input class="formInpt" type="text">
         <br>
         <label class="formLbl">Endereço</label>
-        <input class="formTxt" type="email">
+        <input class="formInpt" type="email">
         <br>
         <label class="formLbl">Sexo</label>
-        <input class="formTxt" type="range">
+        <select class="formInpt">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
         <br>
     </form>
     </div>
