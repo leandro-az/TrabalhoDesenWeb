@@ -1,7 +1,7 @@
 # DesenWeb
 Repositório da Disciplina Desenvolvimento Web:
 
-Esse repositório tem a serventia de armazenar todos as codificações produzidas durante a disciplina de Desenvolvimento Web 2017.2 - Universidade Federal Fluminense:
+Esse repositório tem a serventia de armazenar todas as codificações produzidas durante a disciplina de Desenvolvimento Web 2017.2 - Universidade Federal Fluminense:
 
 Fizemos Uso da Ferramenta Brackets junto a uma Api integrada ao git para faciliar os procedimentos de Diff,Merge,Commit.
 
