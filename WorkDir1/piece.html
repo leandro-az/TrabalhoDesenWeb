@@ -2,29 +2,30 @@
 <html>
 <head>
     <title>Formulário Peça</title>
-    <style>
-        body{
-         background-image: linear-gradient(to right , gray ,white ); /* Standard syntax */
-         }
-
-    </style>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="style.css">
 </head>
-<body background="lin">
-    <h1>Formulário Peça</h1>
+<body class="formBody">
+
+    <div class="topDiv">
+        <h1 class="title">Formulário Peça</h1>
+    </div>
+
+    <div class="contentDiv">
     <form>
-       Nome da Peça:
-      <input type="text" class="alinha"><br><br>
-        Categoria da Peça:
-      <input type="text"><br><br>
-        Valor Unitário:
-      <input type="text"><br><br>
-        Nome da Peça:
-      <input type="text"><br><br>
-        Unidade:
-      <input type="text"><br><br>
-        Quantidade:
-      <input type="text"><br><br>
-      <textarea rows="10" cols="40" maxlength="500"></textarea>
+        <label class="formLbl">Nome da Peça:</label>
+        <input class="formInpt" type="text"><br><br>
+        <label class="formLbl">Categoria da Peça:</label>
+        <input class="formInpt" type="text"><br><br>
+        <label class="formLbl">Valor Unitário:</label>
+        <input class="formInpt" type="text"><br><br>
+        <label class="formLbl">Unidade:</label>
+        <input class="formInpt" type="text"><br><br>
+        <label class="formLbl">Quantidade:</label>
+        <input class="formInpt" type="text"><br><br>
+        <label class="formLbl">Descrição:</label>
+        <textarea class="formInpt" rows="10" cols="40" maxlength="500"></textarea>
     </form>
+    </div>
 </body>
 </html>
