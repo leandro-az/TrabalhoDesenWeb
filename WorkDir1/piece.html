@@ -2,29 +2,147 @@
 <html>
 <head>
     <title>Formulário Peça</title>
+    <meta charset="UTF-8">
     <style>
-        body{
-         background-image: linear-gradient(to right , gray ,white ); /* Standard syntax */
-         }
+html{
+    height: 100%;
+}
+.title{
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
 
-    </style>
+}
+
+.topDiv{
+    background: lightblue;
+    height: inherit;
+    margin:1px;
+    padding: 1px;
+
+}
+
+.indexBody{
+    min-height: 100%;
+    font-family: sans-serif;
+    background: radial-gradient(ellipse at center, #326600 0%,#326780 100%);
+}
+
+.formBody{
+    min-height: 100%;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom , blue ,white );
+}
+
+.formLbl{
+    position: fixed;
+    left: 40px;
+}
+
+.formInpt{
+    position: fixed ;
+    left: 200px;
+}
+.menuDiv{
+    padding: 10px;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid white;
+}
+.contentDiv{
+    background: white;
+    margin: 1px;
+    padding: 10px;
+    padding-bottom: 50;
+    height: 350px;
+    border: 2px solid grey;
+
+}
+</style><style>
+html{
+    height: 100%;
+}
+.title{
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+.topDiv{
+    background: lightblue;
+    height: inherit;
+    margin:1px;
+    padding: 1px;
+
+}
+
+.indexBody{
+    min-height: 100%;
+    font-family: sans-serif;
+    background: radial-gradient(ellipse at center, #326600 0%,#326780 100%);
+}
+
+.formBody{
+    min-height: 100%;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom , blue ,white );
+}
+
+.formLbl{
+    position: fixed;
+    left: 40px;
+}
+
+.formInpt{
+    position: fixed ;
+    left: 200px;
+}
+.menuDiv{
+    padding: 10px;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid white;
+}
+.contentDiv{
+    background: white;
+    margin: 1px;
+    padding: 10px;
+    padding-bottom: 50;
+    height: 350px;
+    border: 2px solid grey;
+
+}
+</style>
 </head>
-<body background="lin">
-    <h1>Formulário Peça</h1>
+<body class="formBody">
+
+    <div class="topDiv">
+        <h1 class="title">Formulário Peça</h1>
+    </div>
+
+    <div class="contentDiv">
     <form>
-       Nome da Peça:
-      <input type="text" class="alinha"><br><br>
-        Categoria da Peça:
-      <input type="text"><br><br>
-        Valor Unitário:
-      <input type="text"><br><br>
-        Nome da Peça:
-      <input type="text"><br><br>
-        Unidade:
-      <input type="text"><br><br>
-        Quantidade:
-      <input type="text"><br><br>
-      <textarea rows="10" cols="40" maxlength="500"></textarea>
+        <label class="formLbl">Nome da Peça:</label>
+        <input class="formInpt" type="text"><br><br>
+        <label class="formLbl">Categoria da Peça:</label>
+        <input class="formInpt" type="text"><br><br>
+        <label class="formLbl">Valor Unitário:</label>
+        <input class="formInpt" type="text"><br><br>
+        <label class="formLbl">Unidade:</label>
+        <input class="formInpt" type="text"><br><br>
+        <label class="formLbl">Quantidade:</label>
+        <input class="formInpt" type="text"><br><br>
+        <label class="formLbl">Descrição:</label>
+        <textarea class="formInpt" rows="10" cols="40" maxlength="500"></textarea>
+        <br><br>
+         <button type="submit" style="margin-left:20px" onclick="alert('Peça Cadastrada Com sucesso');" >
+                <a href="index.html">
+                Cadastrar
+                </a>
+        </button>
+
     </form>
+    </div>
 </body>
 </html>
