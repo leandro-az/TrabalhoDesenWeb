@@ -3,7 +3,62 @@
 <head>
     <title>Formulário Usuário</title>
     <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <style>
+html{
+    height: 100%;
+}
+.title{
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+.topDiv{
+    background: lightblue;
+    height: inherit;
+    margin:1px;
+    padding: 1px;
+
+}
+
+.indexBody{
+    min-height: 100%;
+    font-family: sans-serif;
+    background: radial-gradient(ellipse at center, #326600 0%,#326780 100%);
+}
+
+.formBody{
+    min-height: 100%;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom , blue ,white );
+}
+
+.formLbl{
+    position: absolute;
+    left: 40px;
+}
+
+.formInpt{
+    position: absolute;
+    left: 250px;
+}
+.menuDiv{
+    padding: 10px;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid white;
+}
+.contentDiv{
+    background: white;
+    margin: 1px;
+    padding: 10px;
+    padding-bottom: 50px;
+    //height: 350px;
+    border: 2px solid grey;
+
+}
+</style>
 </head>
 <body class="formBody">
 
@@ -14,9 +69,6 @@
     <div class="contentDiv">
     <form class="form">
         <label class="formLbl">Nome Completo:</label>
-        <input class="formInpt" type="text">
-        <br><br>
-        <label class="formLbl">E-mail:</label>
         <input class="formInpt" type="text">
         <br><br>
         <label class="formLbl">Endereço:</label>
@@ -59,6 +111,15 @@
             <option value="to">TO</option>
         </select>
         <br><br>
+        <label class="formLbl">Referênica:</label>
+        <input class="formInpt" type="texte">
+        <br><br>
+        <label class="formLbl">CPF:</label>
+        <input class="formInpt" type="texte">
+        <br><br>
+        <label class="formLbl">RG:</label>
+        <input class="formInpt" type="texte">
+        <br><br>
         <label class="formLbl">Sexo:</label>
         <select class="formInpt">
             <option value="M">Masculino</option>
@@ -71,6 +132,23 @@
             <option value="casado">Casado</option>
         </select>
         <br><br>
+        <label class="formLbl">E-mail:</label>
+        <input class="formInpt" type="text">
+        <br><br>
+        <label class="formLbl">Telefone fixo:</label>
+        <input class="formInpt" type="texte">
+        <br><br>
+        <label class="formLbl">Celular:</label>
+        <input class="formInpt" type="texte">
+        <br><br>
+        <label class="formLbl">Numero Cartao de Crédito:</label>
+        <input class="formInpt" type="texte">
+        <br><br>
+        <label class="formLbl">Bandeira:</label>
+        <select class="formInpt">
+            <option value="solteiro">Visa</option>
+            <option value="mastervisa">Mastercard</option>
+        </select>
 
     </form>
     </div>
