@@ -7,6 +7,23 @@
 html{
     height: 100%;
 }
+
+.formBody{
+    background: linear-gradient(to bottom , blue ,cyan );
+    background-attachment: fixed;
+    height: 100%;
+    padding: 0px 10%;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.topDiv{
+    background: lightblue;
+    margin:0px;
+    padding: 1px;
+
+}
+
 .title{
     font-size: 22px;
     font-family: sans-serif;
@@ -14,51 +31,37 @@ html{
 
 }
 
-.topDiv{
-    background: lightblue;
-    height: inherit;
-    margin:1px;
-    padding: 1px;
-
-}
-
-.indexBody{
-    height: 100%;
-    background-attachment: fixed;
-    font-family: sans-serif;
-    background: radial-gradient(ellipse at center, #326600 0%,#326780 100%);
-}
-
-.formBody{
-    background-attachment: fixed;
-    min-height: 100%;
-    font-family: sans-serif;
-    background: linear-gradient(to bottom , blue ,white );
-}
 
 .formLbl{
     position: absolute;
-    left: 40px;
+    left: 20%;
 }
 
 .formInpt{
     position: absolute;
-    left: 250px;
+    left: 40%;
 }
-.menuDiv{
-    padding: 10px;
-    text-align: center;
-    background: rgba(0,0,0,0.2);
-    border: 1px solid white;
+
+.formBtn{
+    background-color: white;
+    border: 2px solid navy;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    margin: 0 auto;
+    transition:0.5s;
+}
+
+.formBtn:hover{
+    background-color:aqua;
+
 }
 .contentDiv{
-    background: white;
-    margin: 1px;
-    padding: 10px;
-    padding-bottom: 50px;
-    //height: 350px;
-    border: 2px solid grey;
-
+    background: rgba(255,255,255,0.7);
+    margin: 0px;
+    padding: 30px;
+    padding-bottom: 40px;
+    border-top: 2px solid red;
 }
 </style>
 </head>
@@ -153,7 +156,7 @@ html{
         </select>
         <br><br>
 
-            <button type="submit" style="margin-left:20px" onclick="alert('Pessoa Cadastrada Com sucesso');" >
+            <button class="formBtn" type="submit"  onclick="alert('Pessoa Cadastrada Com sucesso');" >
                 <a href="index.html">
                 Cadastrar
                 </a>
