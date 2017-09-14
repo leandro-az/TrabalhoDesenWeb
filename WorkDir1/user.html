@@ -64,6 +64,8 @@ html{
     border-top: 2px solid red;
 }
 </style>
+    <script type="text/javascript" src="validate.js">
+</script>
 </head>
 <body class="formBody">
 
@@ -72,18 +74,18 @@ html{
     </div>
 
     <div class="contentDiv">
-    <form class="form">
+    <form class="form" method="post" action="index.html" onsubmit="return validaCampos()">
         <label class="formLbl">Nome Completo:</label>
-        <input class="formInpt" type="text">
+        <input class="formInpt" type="text" id="nameTxt">
         <br><br>
         <label class="formLbl">Endereço:</label>
         <input class="formInpt" type="email">
         <br><br>
         <label class="formLbl">Bairro:</label>
-        <input class="formInpt" type="texte">
+        <input class="formInpt" type="text">
         <br><br>
         <label class="formLbl">Cidade:</label>
-        <input class="formInpt" type="texte">
+        <input class="formInpt" type="text">
         <br><br>
         <label class="formLbl">Estado:</label>
         <select class="formInpt">
@@ -117,13 +119,13 @@ html{
         </select>
         <br><br>
         <label class="formLbl">Referênica:</label>
-        <input class="formInpt" type="texte">
+        <input class="formInpt" type="text">
         <br><br>
         <label class="formLbl">CPF:</label>
-        <input class="formInpt" type="texte">
+        <input class="formInpt" type="text" id="cpfTxt">
         <br><br>
         <label class="formLbl">RG:</label>
-        <input class="formInpt" type="texte">
+        <input class="formInpt" type="text">
         <br><br>
         <label class="formLbl">Sexo:</label>
         <select class="formInpt">
@@ -141,13 +143,13 @@ html{
         <input class="formInpt" type="text">
         <br><br>
         <label class="formLbl">Telefone fixo:</label>
-        <input class="formInpt" type="texte">
+        <input class="formInpt" type="text">
         <br><br>
         <label class="formLbl">Celular:</label>
-        <input class="formInpt" type="texte">
+        <input class="formInpt" type="text">
         <br><br>
         <label class="formLbl">Numero Cartao de Crédito:</label>
-        <input class="formInpt" type="texte">
+        <input class="formInpt" type="text">
         <br><br>
         <label class="formLbl">Bandeira:</label>
         <select class="formInpt">
@@ -156,12 +158,7 @@ html{
         </select>
         <br><br>
 
-            <button class="formBtn" type="submit"  onclick="alert('Pessoa Cadastrada Com sucesso');" >
-                <a href="index.html">
-                Cadastrar
-                </a>
-        </button>
-
+            <input class="formBtn" type="submit" value="Cadastra"/>
 
     </form>
     </div>
