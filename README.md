@@ -32,6 +32,8 @@ b) Formulário Peça
 - Unidade (kg, litro...)
 - Quantidade 
 
+2-Etapa: Verificaçao dos campos do formulario de usuario usando JavaScript
+
 
 Autores: Lucas Timotheo 
          Leandro Almeida
